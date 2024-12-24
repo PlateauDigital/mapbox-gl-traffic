@@ -50,6 +50,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -154,6 +155,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -265,6 +267,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -380,6 +383,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -483,6 +487,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -558,6 +563,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -629,6 +635,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -696,6 +703,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -759,6 +767,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -834,6 +843,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
