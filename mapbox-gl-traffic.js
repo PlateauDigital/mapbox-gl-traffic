@@ -50,6 +50,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -154,6 +155,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -265,6 +267,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -380,6 +383,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -483,6 +487,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -558,6 +563,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -629,6 +635,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -696,6 +703,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -759,6 +767,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -834,6 +843,7 @@ var trafficLayers = [
           ]
         ]
       },
+      'line-emissive-strength': 0.8,
       'line-color': {
         'base': 1,
         'type': 'categorical',
@@ -954,12 +964,8 @@ MapboxTraffic.prototype.render = function () {
       url: 'mapbox://mapbox.mapbox-traffic-v1'
     });
 
-    var roadLayers = this._map.getStyle().layers.filter(function (layer) {
-      return layer['source-layer'] === 'road';
-    });
-    var topRoadLayer = roadLayers[roadLayers.length - 1].id;
     var style = this._map.getStyle();
-    var trafficStyle = addLayers(style, trafficLayers, topRoadLayer);
+    var trafficStyle = addLayers(style, trafficLayers, 'traffic-root');
     this._map.setStyle(trafficStyle);
   }
 
