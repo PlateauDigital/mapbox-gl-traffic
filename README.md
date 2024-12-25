@@ -30,6 +30,10 @@ const map = new mapboxgl.Map({
     zoom: 9
 });
 map.on('load', () => {
+    map.current.addLayer({
+        id: "traffic-root",
+        type: "slot",
+    })
     map.addControl(new MapboxTraffic());
 });
 ```
